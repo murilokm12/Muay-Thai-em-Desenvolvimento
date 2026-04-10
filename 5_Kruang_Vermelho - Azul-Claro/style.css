@@ -1,0 +1,195 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes animarCor {
+        0% {
+            background-position: 0%;
+        }
+
+        100% {
+            background-position: 200%;
+        }
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #0a0a0a;
+        color: #fff;
+    }
+
+    header a {
+        text-decoration: none;
+    }
+
+    header {
+        animation: aparecer 1s ease forwards;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        border-bottom: 2px solid red;
+    }
+
+    header h1 {
+        font-family: 'Oswald', sans-serif;
+        color: red;
+        letter-spacing: 2px;
+    }
+
+    nav a {
+        color: #fff;
+        margin-left: 20px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: red;
+    }
+
+    .img_branco {
+        margin-top: 33px;
+    }
+
+    .historia {
+        animation: aparecer 1s ease forwards;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 102px;
+        margin-right: 33px;
+    }
+
+
+    .quebrar-linha {
+        animation: aparecer 1s ease forwards;
+        white-space: pre-line;
+        font-family: serif;
+        font-size: 19px;
+        margin-top: 43px;
+        margin-right: 33px;
+    }
+
+    h2 {
+        margin-top: 40px;
+        font-size: 28px;
+
+        background: linear-gradient(90deg, #00bfff, red, #00bfff);
+        background-size: 200%;
+
+        background-clip: text;
+        -webkit-background-clip: text;
+
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+
+        animation: animarCor 3s linear infinite;
+    }
+
+    ul {
+        list-style: none;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    ul li {
+        background: #111;
+        margin: 10px auto;
+        padding: 12px;
+        max-width: 400px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    ul li:hover {
+        box-shadow:
+            0 0 10px #00bfff,
+            0 0 15px rgb(255, 0, 0);
+        transform: translateY(-3px);
+    }
+
+    .container {
+        margin-top: 120px;
+        padding: px;
+        text-align: center;
+        animation: aparecer 1s ease;
+    }
+
+
+    .texto {
+        max-width: 700px;
+        margin: 20px auto;
+        line-height: 1.6;
+        font-size: 17px;
+    }
+
+
+    .footer {
+        background: #000;
+        border-top:
+            0 0 10px #34bcea;
+        text-align: center;
+        padding: 30px 10px;
+        margin-top: 50px;
+    }
+
+    .footer p {
+        margin: 5px 0;
+        color: #ccc;
+    }
+
+    .card1 {
+        background: #111;
+        padding: 20px;
+        margin-left: 570px;
+        margin-right: 570px;
+        border-radius: 10px;
+        transition: 0.3s;
+        display: block;
+        /* faz virar “caixa” */
+        text-decoration: none;
+        color: white;
+    }
+
+
+    .grid a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+    .grid .card:hover {
+        box-shadow:
+            0 0 10px #00bfff;
+    }
+
+    h2 {
+        scroll-margin-top: 120px;
+    }
+
+    img {
+        height: 422px;
+    }

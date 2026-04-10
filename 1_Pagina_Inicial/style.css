@@ -1,0 +1,283 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* novo */
+    }
+
+    html {
+    scroll-behavior: smooth;
+}
+
+    @keyframes aparecer {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #0a0a0a;
+        color: #fff;
+    }
+
+    /* Cabeçalho-menu */
+
+    header a {
+        text-decoration: none;
+    }
+
+    header {
+        animation: aparecer 1s ease forwards;
+        position: fixed;
+        /* novo */
+        width: 100%;
+        top: 0;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        border-bottom: 2px solid red;
+    }
+
+    header h1 {
+        font-family: 'Oswald', sans-serif;
+        color: red;
+        letter-spacing: 2px;
+    }
+
+    nav a {
+        color: #fff;
+        margin-left: 20px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: red;
+    }
+
+
+    .historia {
+        animation: aparecer 1s ease forwards;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 102px;
+        margin-right: 33px;
+    }
+
+
+    .quebrar-linha {
+        animation: aparecer 1s ease forwards;
+        white-space: pre-line;
+        font-family: serif;
+        font-size: 19px;
+        margin-top: 43px;
+    }
+
+
+
+
+
+    section {
+        animation: aparecer 1s ease forwards;
+        padding: 100px 40px;
+    }
+
+    .section-title {
+        animation: aparecer 1s ease forwards;
+        font-family: 'Oswald', sans-serif;
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: red;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    /* Golpes */
+
+    .card1 {
+        background: #111;
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+        display: block;
+        /* faz virar “caixa” */
+        text-decoration: none;
+        color: white;
+    }
+
+    .card1:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgb(255, 255, 255);
+    }
+
+    .card2:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgb(255, 255, 255);
+    }
+
+
+    /* Kruangs */
+
+
+    .grid .card:nth-child(1):hover {
+        box-shadow: 0 0 15px rgb(255, 255, 255);
+    }
+
+    .grid .card:nth-child(2):hover {
+        /* box-shadow: 0 0 15px rgb(255, 0, 0); */
+        box-shadow:
+            0 0 10px white,
+            0 0 15px red;
+    }
+
+    .grid .card:nth-child(3):hover {
+        box-shadow:
+            0 0 15px red;
+    }
+
+    .grid .cards2:hover {
+        box-shadow:
+            0 0 15px red;
+    }
+
+    .grid .card:nth-child(4):hover {
+        box-shadow:
+            0 0 10px #00bfff,
+            0 0 15px rgb(255, 0, 0);
+    }
+
+    .grid .card:nth-child(5):hover {
+        box-shadow:
+            0 0 10px #34bcea;
+    }
+
+    .grid .card:nth-child(6):hover {
+        box-shadow:
+            0 0 10px #00bfff,
+            0 0 15px rgb(4, 61, 247);
+    }
+
+    .grid .card:nth-child(7):hover {
+        box-shadow:
+            0 0 15px rgb(20, 71, 242);
+
+    }
+
+    .grid .card:nth-child(8):hover {
+        box-shadow:
+            0 0 10px #000000,
+            0 0 15px rgb(4, 61, 247);
+    }
+
+    .grid .card:nth-child(9):hover {
+        box-shadow:
+            0 0 19px rgb(0, 0, 0),
+            0 0 15px rgb(0, 0, 0);
+    }
+
+    .grid .card:nth-child(10):hover {
+        box-shadow:
+            0 0 25px rgb(0, 0, 0),
+            0 0 15px rgb(225, 255, 255);
+    }
+
+    .grid .card:nth-child(11):hover {
+        box-shadow:
+            /* 0 0 9px rgb(225, 255, 255),
+        0 0 10px rgb(255, 0, 0),
+        0 0 23px rgb(0, 0, 0), */
+            0 0 10px white,
+            0 0 15px #000000,
+            0 0 20px red;
+
+    }
+
+    .grid a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+    .lutador-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 33px;
+        margin-bottom: 0;
+
+    }
+
+    .nome {
+        background: #111;
+        padding: 20px 97px 20px 97px;
+        border-radius: 10px;
+        transition: 0.3s;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+
+
+    }
+
+    .nome:hover {
+        box-shadow:
+            0 0 15px red;
+    }
+
+    .lutador-card img {
+        width: 300px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 10px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .lutador-card img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 0 20px red;
+}
+
+
+    /* provisório */
+    .fim {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .logo {
+        height: 546px;
+    }
+
+
+
+    .footer {
+        background: #000;
+        border-top: 2px solid red;
+        text-align: center;
+        padding: 30px 10px;
+        margin-top: 50px;
+    }
+
+    .footer p {
+        margin: 5px 0;
+        color: #ccc;
+    }
